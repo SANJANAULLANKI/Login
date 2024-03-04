@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Register</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename= './style.css') }}">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Register</h1>
+    <form action="/register" method="POST">
+        <p>Enter Username:</p>
+        <p><input type="text" name="username" /></p>
+        <p>Enter Password:</p>
+        <p><input type="password" name="password" /></p>
+
+        <p><input type="submit" value="submit" /></p>
+		<h1><strong class="str" >{{name}} does not exist!!! please register</strong></h1>
+    </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+  <head>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{ url_for('static', filename= './style.css') }}">
+    <link href="static/bootstrap.min.css" rel="stylesheet" media="screen">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Login</h1>
+    <form action="/login" method="POST">
+        <p>Enter Username:<input type="text" name="username" placeholder='username'/></p>
+        <p>Enter Password:<input type="password" name="password" placeholder='password' /></p>
+
+        <p><input id=button type="submit" value="submit" /></p>
+		<h1><strong class="str" >{{name}}</strong></h1>
+    </form>
+    </div>
+  </body>
+</html>
